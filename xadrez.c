@@ -1,52 +1,40 @@
 #include <stdio.h>
 
 // Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+   
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    int bispo = 5, torre = 5, rainha = 8; //Inicialização das variáveis de controle.
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
-
-    int bispo = 5, torre = 5, rainha = 8;
-
-    for (int i = 0; i < 5; i++)
+    printf("|-Torre-|\n\n");
+    for (int i = 0; i < 5; i++) 
     {
-        if(i=4)
-        {
-        printf("Torre, %d casas a Direita\n",torre--);
-        }
-    }   
+        printf(" Direita\n");   //Imprime 5 vezes a palavra Direita simulando a movimentação da torre.
+    }                           //foi feito utilizando o laço de repetição for.
+    printf("|-------|\n\n");
 
-    while (bispo<=5)
+    printf("|---Bispo---|\n\n");
+
+    while (bispo > 0)
     {
-        if (bispo = 5)
-        {
-        printf("Bispo, %d Casas para 'Cima, Direita'\n",bispo);
-        }
-        bispo++;
+     
+        printf("Cima, Direita'\n");//Imprime 5 vezes as palavras Cima e Direita simulando a movimentação do Bispo.
+                                    //foi feito utilizando o laço de repetição while.
+        bispo--;
     }
+
+    printf("|------------|\n\n");
+
+    printf("|-Rainha-|\n");
 
     do
     {
-        if (rainha == 1)
-        {
-            printf("Rainha, 8 casas à esquerda!");
-        }
-        
-        rainha--;
+            printf(" Esquerda!\n");//Imprime 8 vezes a palavra Esquerda simulando a movimentação da Rainha.
+        rainha--;                   //foi feito utilizando o loop do-while.
     } while (rainha > 0);
     
+    printf("|--------|\n");
     
     
 
